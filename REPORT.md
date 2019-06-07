@@ -42,11 +42,11 @@ scikit-learn for machine learning modelling, data preprocessing and performance 
 ## Data Preprocessing
 
 I used pandas library for data manipulation on Jupyter-Notebook. Firstly, I read the csv file and checked if there is any duplicated rows in dataset. After validating that each row is unique, I start manipulation on the raw csv file which is plotted in below.
- ###change here
+
 ![](/imgs/csv_table.png)
 
 The first operation is to analyze type of columns and NaN values (if there is any). And analysis dataframe is shown in the following.
- ###change here
+
 ![](/imgs/type_nans.png)
 
 
