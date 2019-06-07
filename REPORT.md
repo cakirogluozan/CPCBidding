@@ -104,7 +104,7 @@ And, chosen features' correlation is plotted in the following.
 
 ![](/imgs/corr_features.png)
 
-## Modelling
+## Modeling
 
 After analyzing the data and preparing the training material, I modelled several machine learning solution for the best CPC bidding algorithm. Firstly, I determined my objective. While the main objective is finding the best CPC bidding, it also requires to keep CPA at 15% level.
 
@@ -127,7 +127,9 @@ Data is splitted into 'training' and 'test' materials. Training material is used
 
 After small-sized tests, I've concluded that Random Forest machine learning model with multiple (two) outputs performs the best amongs others.
 
-    Random Forest Regressor: n_estimators=100, criterion='mse', outputs=2
+    Random Forest Regressor: n_estimators=20, criterion='mse', outputs=2, inputs=4
+
+At the model, in order to forecast CPC Bid of a hotelier for a given date, the hotelier's previous 4 days of information is used. For instance, in order to evaluate 5th January CPC Bid, 1-2-3-4 January days are used as inputs.
 
 After fitting, the model's performance is evaluated and plotted for both training and test materials in the following.
 
@@ -139,8 +141,7 @@ After fitting, the model's performance is evaluated and plotted for both trainin
 
 ![](/imgs/direct_cost_test.png)
 
-For more precise performance evaluation, r-squared values are calculated and shown in below.
+For more precise performance evaluation, r-squared score is evaluated as 0.649.
 
     R-squared is a statistical measure of how close the data are to the fitted regression line. It is also known as the coefficient of determination, or the coefficient of multiple determination for multiple regression.
 
-![](/imgs/r2.png)
