@@ -1,7 +1,7 @@
-# CPCBidding Report
+# CPC Bidding Report
 CPC Bidding for A Booking Website with Machine Learning Methods. 
 
-Context:
+## Context
 
 - Walking through process
 - Data Preprocessing
