@@ -5,7 +5,7 @@ CPC Bidding for A Booking Website with Machine Learning Methods.
 
 - Walking through process
 - Data Preprocessing
-- Data Analysis
+- Data Analysis (will be extended)
 - Feature Selection
 - Modeling
 - Performance Evaluation
