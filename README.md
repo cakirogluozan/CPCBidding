@@ -6,5 +6,5 @@ In this repository, CPC Bidding task is implemented.
     
 In this project, a booking website's 90 days of data is preprocessed, analysed and a forecasting model is proposed. Lastly, the model's performance is evaluated. 
 
-A detailed report can be found in [REPORT.md](REPORT.md) and source code of the report can be found in [Source Code](Code.ipynb)
+A detailed report can be found in [REPORT](REPORT.md) and source code of the report can be found in [Source Code](Code.ipynb)
 
