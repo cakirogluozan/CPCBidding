@@ -20,24 +20,13 @@ What difficulties did I encounter and how did you overcome them?
 
 What methodologies and tools did I use?
 
+
 - I've used Python 3.5 on Jupyter-Notebook. Moreover;
 
   - pandas and numpy for data manipulation.
   - os and subprocess for reading data, walking through directories and saving dataframe table images.
   - matplotlib and seaborn for data visualization.
   - scikit-learn for machine learning modelling, data preprocessing and performance evaluation.
-
-## Requirements
-
-I've used Python 3.5 on Jupyter-Notebook. Moreover;
-
-pandas and numpy for data manipulation.
-
-os and subprocess for reading data, walking through directories and saving dataframe table images.
-
-matplotlib and seaborn for data visualization.
-
-scikit-learn for machine learning modelling, data preprocessing and performance evaluation.
 
 ## Data Preprocessing
 
@@ -77,7 +66,6 @@ In the following graph, average number of clicks over day of week is visualized.
   - {Black: Monday-..-Thursday, Red: Friday, Blue: Saturday, Green: Sunday}
   
 ![](/imgs/clicks_dayofweek.png)   
-  - {Black: Monday-..-Thursday, Red: Friday, Blue: Saturday, Green: Sunday}
 
 In the next figure, average number clicks over week is plotted. 
 
@@ -85,11 +73,17 @@ In the next figure, average number clicks over week is plotted.
 
 As you can see, even though the data includes lots of rows, (or inputs) average values are lower floats in between 0-2. In order to find the reasoning behind low average and analyse click distribution over each (dayofweek, week) combination, total count of zero clicks is plotted.
 
+  - {Black: Monday-..-Thursday, Red: Friday, Blue: Saturday, Green: Sunday}
+
 ![](/imgs/zero_clicks.png)
 
 In the following two figures, click distribution over (dayofweek, week) is plotted. The only difference is for analyzing behaviour of average value over dayofweek-ly and monthly, respectively.
 
+  - {Black: Monday-..-Thursday, Red: Friday, Blue: Saturday, Green: Sunday}
+
 ![](/imgs/clicks_dayofweekly.png)
+
+  - {Black: January, Red: February, Blue: March}
 
 ![](/imgs/clicks_monthly.png)
 
