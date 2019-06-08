@@ -165,11 +165,11 @@ In this project, hotelier's 90 days of data is preprocessed, analyzed and modell
 
 At the end of the project, average r-squared score is evaluated as 0.649. The score can be improved by 
   
-  1- extracting the number of events, seminars, etc. in the city.
+  - extracting the number of events, seminars, etc. in the city.
+  
+  - extracting if the date is a holiday such as Christmas, Easter, Spring Break etc.
 
-  2- extracting if the date is a holiday such as Christmas, Easter, Spring Break etc.
-
-  3- expanding the dataset by including previous year's, week's, dayofweek's clicks of output. For example: 
+  - expanding the dataset by including previous year's, week's, dayofweek's clicks of output. For example: 
 
 
 | Type | Date | Clicks | 
