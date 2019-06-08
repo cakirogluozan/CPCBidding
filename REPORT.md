@@ -150,24 +150,27 @@ After fitting, the model's performance is evaluated and plotted for both trainin
 
 ![](/imgs/direct_cost_test.png)
 
-For more precise performance evaluation, r-squared score is evaluated as 0.649.
+For more precise performance evaluation, r-squared score is visualized for each cross validation.
 
     R-squared is a statistical measure of how close the data are to the fitted regression line. It is also known as the coefficient of determination, or the coefficient of multiple determination for multiple regression.
+
+![](/imgs/kfold.png)
+
+Average r-squared score is 0.649. 
 
 ## Conclusion
 CPC Bidding is a charging method for booking websites. A hotelier is charged by each click to its offer(s): Cost-per-click. Forecasting future CPC Bids would provide valuable information to booking websites as well as to hoteliers. 
 
 In this project, hotelier's 90 days of data is preprocessed, analyzed and modelled for forecasting future CPC Bids moreover model's performance is evaluated. 
 
-At the end of the project, r-squared score is evaluated as 0.649. 
-
-The score can be improved by 
-
+At the end of the project, average r-squared score is evaluated as 0.649. The score can be improved by 
+  
   1- extracting the number of events, seminars, etc. in the city.
 
   2- extracting if the date is a holiday such as Christmas, Easter, Spring Break etc.
 
   3- expanding the dataset by including previous year's, week's, dayofweek's clicks of output. For example: 
+
 
 | Type | Date | Clicks | 
 |---|---|---|
