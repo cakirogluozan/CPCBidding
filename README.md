@@ -14,12 +14,12 @@ Source code of the report can be found in [here](Code.ipynb).
 Code is implemented in Python 3.5 on Jupyter-Notebook.
 
 #### Requirements: 
-- General Functions: subprocess, warnings, os
-- Data Manipulation: pandas, numpy
-- Data Visualization: seaborn, matplotlib
-- Data Preparation: sklearn.utils, sklearn.model_selection
-- Machine Learning Model Proposal: sklearn.ensemble, sklearn.multioutput
-- Performance Evaluation: sklearn.metrics
+    General Functions: subprocess, warnings, os
+    Data Manipulation: pandas, numpy
+    Data Visualization: seaborn, matplotlib
+    Data Preparation: sklearn.utils, sklearn.model_selection
+    Machine Learning Model Proposal: sklearn.ensemble, sklearn.multioutput
+    Performance Evaluation: sklearn.metrics
 
 ## REPORT
 In the report, the whole process of the solution is expressed.
