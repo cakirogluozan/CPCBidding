@@ -1,7 +1,17 @@
-# CPCBidding
-CPC Bidding for A Booking Website with Machine Learning Methods
+# CPCBidding Report
+CPC Bidding for A Booking Website with Machine Learning Methods. 
 
-## Walking through your process.
+Context:
+
+- Walking through process
+- Data Preprocessing
+- Data Analysis
+- Feature Selection
+- Modeling
+- Performance Evaluation
+- Conclusion
+
+## Walking through process.
 
 1- What indicators did I use to make your predictions?
 
@@ -59,6 +69,8 @@ And its stats:
 
 ![](/imgs/encoded_csv_stats.png)
 
+## Data Analysis
+
 Before continuing with the modeling and feature selection, distribution of the (total) number of clicks is analyzed in the following in order to support my assumption which states click distribution over dayofweek, day, week and month has a valuable feature information. For example, number of clicks at Christmas should be lower value than average and number of clicks at summer time should be higher value than average etc.
 
 In the following graph, average number of clicks over day of week is visualized. It can be concluded that average clicking has its highest value on Sunday and lowest value on Friday.
@@ -87,6 +99,7 @@ In the following two figures, click distribution over (dayofweek, week) is plott
 
 ![](/imgs/clicks_monthly.png)
 
+## Feature Selection
 
 I plotted correlation matrix of the dataframe in order to get information if the features are correlated to each other. Since using correlated features does not affect the performance of the model and training with more features would require much more time, I eliminated some features.
 
@@ -125,6 +138,8 @@ After small-sized tests, I've concluded that Random Forest machine learning mode
 
 At the model, in order to forecast CPC Bid of a hotelier for a given date, the hotelier's previous 4 days of information is used. For instance, in order to evaluate 5th January CPC Bid, 1-2-3-4 January days are used as inputs.
 
+## Performance Evaluation
+
 After fitting, the model's performance is evaluated and plotted for both training and test materials in the following.
 
 ![](/imgs/direct_clicks_training.png)
@@ -139,3 +154,24 @@ For more precise performance evaluation, r-squared score is evaluated as 0.649.
 
     R-squared is a statistical measure of how close the data are to the fitted regression line. It is also known as the coefficient of determination, or the coefficient of multiple determination for multiple regression.
 
+## Conclusion
+CPC Bidding is a charging method for booking websites. A hotelier is charged by each click to its offer(s): Cost-per-click. Forecasting future CPC Bids would provide valuable information to booking websites as well as to hoteliers. 
+
+In this project, hotelier's 90 days of data is preprocessed, analyzed and modelled for forecasting future CPC Bids moreover model's performance is evaluated. 
+
+At the end of the project, r-squared score is evaluated as 0.649. 
+
+The score can be improved by 
+
+  1- extracting the number of events, seminars, etc. in the city.
+
+  2- extracting if the date is a holiday such as Christmas, Easter, Spring Break etc.
+
+  3- expanding the dataset by including previous year's, week's, dayofweek's clicks of output. For example: 
+
+| Type | Date | Clicks | 
+|---|---|---|
+|output| 01.01.2019| Y |
+|previous year| 01.01.2018| X1|
+|previous week| 25.12.2018| X2|
+|day of week| Saturday| X3|
